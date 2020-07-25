@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/devfile/parser/pkg/devfile/parser/data/common"
+	"github.com/devfile/parser/pkg/devfile/data/common"
 )
 
 func TestValidateComponents(t *testing.T) {

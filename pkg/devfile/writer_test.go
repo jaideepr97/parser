@@ -1,10 +1,10 @@
-package parser
+package devfile
 
 import (
 	"testing"
 
-	devfileCtx "github.com/devfile/parser/pkg/devfile/parser/context"
-	v100 "github.com/devfile/parser/pkg/devfile/parser/data/1.0.0"
+	devfileCtx "github.com/devfile/parser/pkg/devfile/context"
+	v100 "github.com/devfile/parser/pkg/devfile/data/1.0.0"
 	"github.com/devfile/parser/pkg/testingutil/filesystem"
 )
 

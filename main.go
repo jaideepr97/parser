@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/devfile/parser/pkg/devfile/parser"
-	devfileParser "github.com/devfile/parser/pkg/devfile/parser"
+	devfile "github.com/devfile/parser/pkg/devfile"
 )
 
+// Testing end-point
 func main() {
 	devfile, err := ParseDevfile("devfile.yaml")
 	if err != nil {
@@ -22,10 +22,10 @@ func main() {
 
 }
 
-//ParseDevfile to parse devfile from library
-func ParseDevfile(devfileLocation string) (devfileoj parser.DevfileObj, err error) {
+// End point defined to return parsed devfile object
+func ParseDevfile(devfileLocation string) (devfileobj devfile.DevfileObj, err error) {
 
-	var devfile devfileParser.DevfileObj
-	devfile, err = devfileParser.ParseAndValidate(devfileLocation)
+	var devfile devfile.DevfileObj
+	devfile, err = ParseAndValidate(devfileLocation)
 	return devfile, err
 }
